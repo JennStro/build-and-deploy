@@ -1,10 +1,15 @@
 language: node_js
 node_js:
-  - '12'
+- '12'
 cache:
   directories:
   - node_modules
 script:
-  - npm run lint
-  - npm test
-  - npm run build
+- npm run lint
+- npm test
+- npm run build
+deploy:
+  provider: heroku
+  app: jennstro-build-and-deploy
+  api_key:
+    secure: UT39wXAqNm06Vm7gCOshyEL+0hHroIcsnMfCtR0fIzWr64Os4AsIiqfQvZhQ6pIwg6/pAeV3snw93fIARWWyDC/heZnLlufA+0nPVLQjBWBG1HeD+0IKEAxKx8Ps75FS34tkhcwsOm+wAiKbD2CgxORtZqDODPgr8kuBTLn5GHqd3H8905R9c9xIOrnG9r5d26BNNysFg7/WC81PHj62QambjH+npg3jkl8+tOmSZ2lW4GbLZjFWReUEOlAGQiwbCB32SdlPdWlSIclsjxCwt6AXZLzjbWQw2ft+DcheLqpODPXV7iYSkkNlO1EU+g9WI2q4EnMhxnTmVEk7n90ATAuD5Rl1v6qIm2q7ArMZnPi7l13cQMKLa+foy/PhiXOQsCp5UR6GonS2AjtCH62qKxbdACvYt89ZRrk4n6qETTdUr3YsI4l7gvBHa48koFteLDAuMYuG/fupawgwkfEL6So86kO9LePkc6Ttob7bIQyV4TKqUiUH6NKb+JpVWa/XJbxCpy2zGArkAkYrfLO7qzviHymJDgScApzqpryJNDqQm7fOSPlz+Chl5/YqyWlR6lT0xvxUCbb22Usk4/F49iaNQGYKbeljlVaGDR1DzqnnQUFkn+YRXGW3f6LijsMFogBLtgwVJnPpmlo3+GFKLzNlIz5PC7JV9T4OYSLGmKI=
